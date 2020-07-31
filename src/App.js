@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 // pages
-import About from "./pages/About";
-import portfolio from "./pages/portfolio";
+
 // components
-import Navbar from "./component/Navbar";
-import Card from "./component/Card";
-import Container from "./component/Container";
-import Col from "./component/Col";
-import Hero from "./component/Hero";
-import Row from "./component/Row";
-import Footer from "./component/Footer";
+// import portfolio from "./pages/portfolio";
+// import Navbar from "./component/Navbar";
+// import Card from "./component/Card";
+// import Container from "./component/Container";
+// import Hero from "./component/Hero";
+// import Footer from "./component/Footer";
 // style
 import './App.css';
 
@@ -21,12 +19,12 @@ class App extends Component {
       <div>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/pages/portfolio">portfolio</Link></li>
+          <li><Link to="/pages/About">About</Link></li>
         </ul>
         <hr />
 
         <Route exact path="/" component={Home} />
-        <Route path="/portfolio" component={portfolio} />
+        <Route path="/About" component={About} />
       </div>
     </HashRouter>
   );
