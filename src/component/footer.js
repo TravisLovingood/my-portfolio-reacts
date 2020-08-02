@@ -12,8 +12,8 @@ function footer() {
             <div className= "container">  
                 <div className="row">
                     <div className="card">
-                        {/* <div className="col s2"></div> */}
-                        <div className="col s12">
+                        <div className="col s2"></div>
+                        <div className="col s8">
                             <div className="row">
                                 <div className="col s1">
                                     <a href="https://www.linkedin.com/in/travis-lovingood-8868101a7/"><img src="links/linkedin.PNG" alt="Linkedin" height="50px" width="50px" className="z-depth-3"></img></a>
@@ -27,11 +27,11 @@ function footer() {
                                 </div>
                             </div> 
                         </div>
-                        {/* <div className="col s2"></div> */}
+                        <div className="col s2"></div>
                     </div>
                 </div>
             </div>            
-        </div>
+          </div>
         <div className= "col s1"></div>
     </div>
   )
