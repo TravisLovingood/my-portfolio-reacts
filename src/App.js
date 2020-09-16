@@ -6,8 +6,9 @@ import ReactPortfolio from './pages/ReactPortfolio';
 import Contact from './pages/Contact';
 import Footer from "./component/footer";
 
-import Image from 'react-bootstrap/Image';
-import "./App.css"
+import "./App.css";
+
+import Image from 'react-bootstrap/Image'
 
 class App extends Component {
   render() {
@@ -27,7 +28,7 @@ class App extends Component {
 
                 <div className="card-action"> 
                   <h4> 
-                  <li><Link to="/">AboutMe </Link></li>
+                  <li><Link to="/">Home </Link></li>
                   <li><Link to="/portfolio">Portfolio </Link></li>
                   <li><Link to="/reactPortfolio">ReactPortfolio </Link></li>
                   <li><Link to="/contact">Contact </Link></li>
