@@ -1,26 +1,30 @@
-body {
-  text-align: center;
-}
 body{
   /* background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-26-achi-30847-lyj2136-11-deadline_1.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=ca5b95a73262d82b0f9ef119c888ee1e); */
     /* background-repeat:no-repeat;
     background-size:cover;
     background-attachment: fixed; */
-    background: #000000;
+  background: #6371f3;
 
+  text-align: center;
   }
+
 li {
   display: inline;
 }
+p,h1,h2,h3,h4,h5,a {
+  text-align: center;
+}
+p, h1,h2,h3,h5{
+  color:  rgb(255, 255, 255);
+}
 
-
-p,h3,.card, h4,a {
-
-  background-color:   rgb(155, 155, 155);
-
+.card {
+  background-color:   rgb(85, 85, 85);
+  text-align: center;
 }
 
 footer {
   text-align: center;
 }
 
+ 

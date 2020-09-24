@@ -1,58 +1,45 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
-import Portfolio from './pages/Portfolio';
-import ReactPortfolio from './pages/ReactPortfolio';
+import Header from "./component/header";
+import Nav from "./component/nav";
+import About from './pages/About';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from "./component/footer";
 
 import "./App.css";
 
+// Bootstrap stuff
 import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+import Carousel from 'react-bootstrap/Carousel'
 
 class App extends Component {
   render() {
     return (
       <HashRouter basename="/">
 
-
-          <div className="row">   
-            <div className= "col s1"></div>
-            <div className= "col s10">
-              <div className="card">
-
-                <div className="card-action">
-                  <h1>Travis Lovingood</h1>
-                  <p>Front End Web Developer</p>
-                </div>
-
-                <div className="card-action"> 
-                  <h4> 
-                  <li><Link to="/">Home </Link></li>
-                  <li><Link to="/portfolio">Portfolio </Link></li>
-                  <li><Link to="/reactPortfolio">ReactPortfolio </Link></li>
-                  <li><Link to="/contact">Contact </Link></li>
-                  </h4>
-                </div>
-
-              </div>
-            </div> 
-            <div className= "col s1"></div>
+        <Header/>
+          
+        <div className="row">   
+          <div className= "col s1"></div>
+          <div className= "col s10">
+            <Nav sticky="fixed" />
           </div>
+          <div className= "col s1"></div>
+        </div>
+        <hr />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
 
         <hr />
 
-        <hr />
-
-          <Route exact path="/" component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/reactPortfolio" component={ReactPortfolio} />
-          <Route path="/contact" component={Contact} />
-
-        <hr />
-
-
-         
         <Footer/>
 
       </HashRouter>
@@ -61,30 +48,59 @@ class App extends Component {
   }
 }
 
-const Home = () => 
-  <div className="row">   
-    <div className= "col s1"></div>
-    <div className= "col s10">
-      <div className="card">
-        <div className="card-action">
-          <h3>About Me</h3>
-          <Image src="links/Me.jpeg" rounded alt="Picture of Travis"/>                 
-          <p>I am a newly graduated web developer offering knowledge and experience in various programming languages such as HTML, CSS, JQuery,
-            JavaScript, and React. I respond to challenges by developing solutions, I am skilled in translating solutions into code as well as designing web
-            applications for desktop, phone, and mobile app users. Please check out my portfolio and my links.
-          </p>
-        </div>
-        <div className="card-action">
-          <li><a href="links/resume.docx"> Resume →</a></li>
-          <li><a href="https://github.com/TravisLovingood"> Github → </a></li>
-          <li><a href="https://travislovingood.github.io/Portfolio/">NonReactPorfolio → </a></li>
-          <li><a href="https://www.linkedin.com/in/travis-lovingood-8868101a7/">LinkedIn → </a></li>
-        </div> 
-      </div>
-    </div> 
-    <div className= "col s1"></div>
-  </div>
-  
 
+
+const Home = () =>
+
+<Container fluid>
+
+  <Row>
+    <Col></Col>
+    <Col xs={10}><h1><strong>Front End Web Developer</strong></h1></Col>
+    <Col></Col>
+  </Row>
+
+<hr />
+
+  <Row>
+    <Col></Col>
+    <Col xs={8}>
+      <Carousel>
+        <Carousel.Item>
+          <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Image src="links/Me.jpeg" alt="Picture of me 2" roundedCircle fluid/>
+        </Carousel.Item>
+      </Carousel>
+    </Col>
+    <Col></Col>
+  </Row>
+
+  <Row>
+    <Col></Col>
+    <Col xs={8}>  
+      <Card>
+        <Card.Body>
+          <Card.Text>
+            <p>
+              Please check out my Projects and my links.
+            </p>
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <h4>
+            <li><a href="https://www.linkedin.com/in/travis-lovingood-8868101a7/"><img src="links/linkedin.PNG" alt="Linkedin" height="50px" width="50px"></img></a></li>
+            <li><a href="links/resume.docx"> Resume </a></li>
+            <li><a href="https://github.com/TravisLovingood"><img src="links/github.PNG" alt="Github" height="50px" width="50px"></img></a></li>
+          </h4>
+        </Card.Footer>
+      </Card>
+    </Col>
+    <Col></Col>
+  </Row>
+
+</Container>
 
 export default App;
+
