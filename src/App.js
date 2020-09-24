@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from "react-router-dom";
+import { Link, HashRouter, Route } from "react-router-dom";
 
 import Header from "./component/header";
 import Nav from "./component/nav";
@@ -24,22 +24,19 @@ class App extends Component {
       <HashRouter basename="/">
 
         <Header/>
-          
-        <div className="row">   
-          <div className= "col s1"></div>
-          <div className= "col s10">
-            <Nav sticky="fixed" />
-          </div>
-          <div className= "col s1"></div>
-        </div>
-        <hr />
+  
+        <Nav/>
+
+<hr />
+
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
 
-        <hr />
+<hr />
 
+        <Nav/>
         <Footer/>
 
       </HashRouter>
@@ -52,11 +49,12 @@ class App extends Component {
 
 const Home = () =>
 
-<Container fluid>
+
+<Container fluid> 
 
   <Row>
     <Col></Col>
-    <Col xs={10}><h1><strong>Front End Web Developer</strong></h1></Col>
+    <Col xs={10}><h1><strong>🙥 Front End Web Developer 🙧</strong></h1></Col>
     <Col></Col>
   </Row>
 
@@ -64,41 +62,99 @@ const Home = () =>
 
   <Row>
     <Col></Col>
-    <Col xs={8}>
-      <Carousel>
-        <Carousel.Item>
-          <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src="links/Me.jpeg" alt="Picture of me 2" roundedCircle fluid/>
-        </Carousel.Item>
-      </Carousel>
-    </Col>
-    <Col></Col>
+    <Col xs={10}>  
+      <Card>
+        <Row>
+          <Col></Col>
+          <Col xs={3}>
+            <Carousel>
+              <Carousel.Item>
+                <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
+              </Carousel.Item>
+            </Carousel>
+          </Col>  
+          <Col xs={7}>
+            <Card.Body>
+              <Card.Text>
+                <p>
+                I am a newly graduated web developer offering knowledge and experience in various programming languages such as HTML, CSS, JQuery,
+                JavaScript, and React. I respond to challenges by developing solutions, I am skilled in translating solutions into code as well as designing web
+                applications for desktop, phone, and mobile app users. Please check out my Projects and my links.
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Col>
+          <Col></Col>
+        </Row>
+        <Card.Footer>
+          <h4><li><Link to="/about">More About Me</Link></li></h4>
+        </Card.Footer>
+      </Card>
+      </Col>
+      <Col></Col>
   </Row>
 
   <Row>
     <Col></Col>
-    <Col xs={8}>  
-      <Card>
-        <Card.Body>
-          <Card.Text>
-            <p>
-              Please check out my Projects and my links.
-            </p>
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <h4>
-            <li><a href="https://www.linkedin.com/in/travis-lovingood-8868101a7/"><img src="links/linkedin.PNG" alt="Linkedin" height="50px" width="50px"></img></a></li>
-            <li><a href="links/resume.docx"> Resume </a></li>
-            <li><a href="https://github.com/TravisLovingood"><img src="links/github.PNG" alt="Github" height="50px" width="50px"></img></a></li>
-          </h4>
-        </Card.Footer>
-      </Card>
-    </Col>
+    <Col xs={10}><h1><strong>🙥 Projects 🙧</strong></h1></Col>
     <Col></Col>
   </Row>
+
+  <hr />
+
+
+<Row>
+  <Col></Col>
+  <Col xs={10}>  
+    <Card>
+      <Row>
+        <Col></Col>
+        <Col xs={3}>
+Body
+        </Col>
+        <Col></Col>
+      </Row>
+      <Card.Footer>
+        <h4><li><Link to="/projects">More Projects</Link></li></h4>
+      </Card.Footer>
+    </Card>
+    </Col>
+    <Col></Col>
+</Row>
+
+
+<hr />
+
+  <Row>
+    <Col></Col>
+    <Col xs={10}><h1><strong>🙥 Contact 🙧</strong></h1></Col>
+    <Col></Col>
+  </Row>
+
+<hr />
+
+  <Row>
+    <Col></Col>
+    <Col xs={10}>  
+      <Card>
+        <Row>
+          <Col></Col>
+          <Col xs={3}>
+Body
+          </Col>
+          <Col></Col>
+        </Row>
+        <Card.Footer>
+          <h4><li><Link to="/contact">More Contacts</Link></li></h4>
+        </Card.Footer>
+      </Card>
+      </Col>
+      <Col></Col>
+  </Row>
+
 
 </Container>
 

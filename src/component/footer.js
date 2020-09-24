@@ -2,22 +2,20 @@ import React from "react";
  
 import "../App.css"
 
+// Bootstrap stuff
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 function footer() {
-  return (
-    <div className="row">   
-        <div className= "col s3"></div>
-        <div className= "col s6">
-            <div className="card">
-                <div className="row">
-                    <div className="col s12" >                                               
-                        <h5><strong>© 2020 | Travis Lovingood</strong></h5>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <div className= "col s3"></div>
-    </div>
-  )
+    return (
+        <Row>
+            <Col></Col>
+            <Col xs={10}>
+                <h5><strong>🙤 © 2020 | Travis Lovingood 🙦</strong></h5>
+            </Col>
+            <Col></Col>
+        </Row>      
+    )
 };
  
 export default footer;
