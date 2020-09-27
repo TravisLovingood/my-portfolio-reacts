@@ -1,11 +1,10 @@
 body{
-  /* background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-26-achi-30847-lyj2136-11-deadline_1.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=ca5b95a73262d82b0f9ef119c888ee1e); */
-    /* background-repeat:no-repeat;
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/cobblestones-robert-ullmann.jpg);
+    background-repeat:no-repeat;
     background-size:cover;
-    background-attachment: fixed; */
-  background: #6371f3;
+    background-attachment: fixed;
 
-  text-align: center;
+    text-align: center;
   }
 
 li {
@@ -14,12 +13,13 @@ li {
 p,h1,h2,h3,h4,h5,a {
   text-align: center;
 }
-p, h1,h2,h3,h5{
+
+p,h5,h2,h3,h1{
   color:  rgb(255, 255, 255);
 }
 
 .card {
-  background-color:   rgb(85, 85, 85);
+  background-color:   rgba(85, 85, 85, 0.753);
   text-align: center;
 }
 
