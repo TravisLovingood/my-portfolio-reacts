@@ -22,6 +22,7 @@ function About() {
                   <Card.Text>
                     <h1><strong>🙥 About Me 🙧</strong></h1>
                   </Card.Text>
+                  <hr />
                   <Card.Text><p>
                     I am a front end react web developer offering knowledge and experience in various programming languages 
                     such as HTML and React. Responding to challenges by learning solutions is something I take 

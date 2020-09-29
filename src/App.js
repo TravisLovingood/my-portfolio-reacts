@@ -40,6 +40,7 @@ const Home = () =>
         <Row>
           <Col></Col>
           <Col lg={4}><h1><strong>🙥 My Bio 🙧</strong></h1>
+            <hr />
             <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
           </Col>  
           <Col md={6}>

@@ -27,7 +27,7 @@ const Contact = () => {
                 <Col></Col>
                 <Col md={10}>
                     <CardDeck>
-                        <Card>
+                        <Card className="p-3">
                             <Card.Body>
                                 <Card.Title>
                                     <h3><strong>🙤 Direct Contacts 🙦</strong></h3>
