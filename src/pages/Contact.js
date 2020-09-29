@@ -34,8 +34,8 @@ const Contact = () => {
                                 </Card.Title>
                                 <hr />
                                 <Card.Text>
-                                    <li><h3><span role="img" aria-label="phone">📞</span>:(919)637-5843</h3></li>
-                                    <li><h3><span role="img" aria-label="email">📫</span>:tclovingood01@gmail</h3></li>
+                                    <li><h3><span role="img" aria-label="phone">📞</span>(919)637-5843</h3></li>
+                                    <li><h3><span role="img" aria-label="email">📫</span>tclovingood01@gmail</h3></li>
                                     <li><h3><a href="https://www.linkedin.com/in/travis-lovingood-8868101a7/">LinkedIn<img src="links/linkedin.PNG" alt="Linkedin" height="50px" width="50px"></img></a></h3></li>
                                 </Card.Text>
                             </Card.Body>
