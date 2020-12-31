@@ -144,6 +144,7 @@ const Home = () =>
     </Col>
     <Col></Col>
   </Row>
+  <hr />
   <Row>
     <Col></Col>
     <Col md={6}>  
@@ -154,6 +155,7 @@ const Home = () =>
     </Col>
     <Col></Col>
   </Row>
+  <hr />
   <Row>
     <Col></Col>
     <Col md={4}>  
