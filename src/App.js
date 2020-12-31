@@ -39,14 +39,14 @@ const Home = () =>
       <Card className="p-3">
         <Row>
           <Col></Col>
-          <Col lg={4}><h1><strong>🙥 My Bio 🙧</strong></h1>
+          <Col lg={4}><h1><strong> My Bio </strong></h1>
             <hr />
             <Image src="links/Me.jpeg" alt="Picture of Travis" roundedCircle fluid/>
           </Col>  
           <Col md={6}>
             <Card.Body>
               <Card.Text><p>
-                I am a front end react web developer offering knowledge and experience in various programming languages.
+                I am a front-end web developer offering knowledge and experience in various programming languages.
                 I enjoy creating interesting applications with different people and I am excited to join a collaborative, 
                 quality-driven team. I have experience with HTML5, CSS3, Bootstrap, JavaScript, React, Heroku, Git, 
                 Command Line Interface (CLI) and Zoom. 
@@ -70,11 +70,12 @@ const Home = () =>
     <Col></Col>
     <Col md={4}>
       <Card>
-        <h1><strong>🙤 Projects 🙦</strong></h1>
+        <h1><strong> Projects </strong></h1>
       </Card>
     </Col>
     <Col></Col>
   </Row>
+  <hr />
   <Row>    
     <Col></Col>
     <Col md={10}>
@@ -122,6 +123,7 @@ const Home = () =>
     </Col>
     <Col></Col>
   </Row>
+  <hr />
   <Row>
     <Col></Col>
     <Col md={4}>  
@@ -137,7 +139,7 @@ const Home = () =>
     <Col></Col>
     <Col md={4}>
       <Card>
-        <h1><strong>🙥 Contact 🙧</strong></h1>
+        <h1><strong> Contact </strong></h1>
       </Card>
     </Col>
     <Col></Col>

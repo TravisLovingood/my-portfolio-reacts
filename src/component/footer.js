@@ -9,7 +9,7 @@ function footer() {
         <Row>
             <Col></Col>
             <Col xs={10}>
-                <h5><strong>🙤 © 2020 | Travis Lovingood 🙦</strong></h5>
+                <h5><strong> © 2020 | Travis Lovingood </strong></h5>
             </Col>
             <Col></Col>
         </Row>      

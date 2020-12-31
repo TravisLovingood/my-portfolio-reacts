@@ -17,7 +17,7 @@ const Contact = () => {
                 <Col></Col>
                 <Col md={4}>
                     <Card>
-                        <h1><strong>🙥 Contact 🙧</strong></h1>
+                        <h1><strong> Contact </strong></h1>
                     </Card>
                 </Col>
                 <Col></Col>
@@ -30,7 +30,7 @@ const Contact = () => {
                         <Card className="p-3">
                             <Card.Body>
                                 <Card.Title>
-                                    <h3><strong>🙤 Direct Contacts 🙦</strong></h3>
+                                    <h3><strong> Direct Contacts </strong></h3>
                                 </Card.Title>
                                 <hr />
                                 <Card.Text>
@@ -44,7 +44,7 @@ const Contact = () => {
                         <Card className="p-3">
                             <Card.Body>
                                 <Card.Title>
-                                    <h3><strong>🙤 Online Materials 🙦</strong></h3>
+                                    <h3><strong> Online Materials </strong></h3>
                                 </Card.Title>
                                 <hr />
                                 <Card.Text>
@@ -63,7 +63,7 @@ const Contact = () => {
                 <Col></Col>
                 <Col md={4}>
                     <Card>
-                        <h3><li><Link to="/">🙤 Back Home 🙦</Link></li></h3>
+                        <h3><li><Link to="/"> Back Home </Link></li></h3>
                     </Card>    
                 </Col>
                 <Col></Col>

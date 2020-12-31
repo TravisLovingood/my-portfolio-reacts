@@ -19,7 +19,7 @@ function Projects() {
         <Col></Col>
         <Col md={4}>
           <Card>
-            <h1><strong>🙥 Projects 🙧</strong></h1>
+            <h1><strong>Projects</strong></h1>
           </Card>
         </Col>
         <Col></Col>
@@ -37,7 +37,7 @@ function Projects() {
                   <h3><strong>Scheduler</strong></h3>
                 </Card.Title>
                 <Card.Text>
-                  <p>My Work day scheduler displays the time and date using Moment.js. The current time is 
+                  <p>My app, Work day scheduler, displays both the time and date using Moment.js. The current time is 
                   highlighted red while the approaching time is highlighted green. As the day advances the 
                   red area advances. I also used Local-storage to handle saved appointments and notes that 
                   the user saves.</p>
@@ -56,10 +56,9 @@ function Projects() {
                 </Card.Title>
                 <Card.Img variant="top" src="links/PleaseTakeANote.PNG" alt="Please Take A Note Screenshot" rounded fluid /> 
                 <Card.Text>
-                  <p>"Please Take A Note" designed to help a user get things organized. Users can add a 
-                    notes to a database by creating a title, adding body, and then saving them using Express 
-                    (for a single page deployment solution). The application uses uuid to generate random 
-                    user id data for securty and has been deployed on Heroku, for easy access!</p>
+                  <p>"Please Take A Note" is designed to help users get organized. Users can add 
+                    notes to a database by creating a label, adding a discriptive body, and then save them using Express (for a single page deployment solution). The application uses UUID to generate random 
+                    user ID data for security and deployed on Heroku, for easy access.</p>
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
@@ -91,7 +90,7 @@ function Projects() {
                 <Card.Img variant="top" src="links/Foodacation.PNG" alt="Food/Recipe Project Screenshot" rounded fluid /> 
                 <Card.Text>
                   <p>My team (Malesha Jones, Thomas O’Connell, Dilshan Opatha and myself) wanted to solve a 
-                    real working-className problem, “What's for dinner?” We learned to work with the data 
+                    real working-class problem, “What's for dinner?” We learned to work with the data 
                     received from multiple server-side APIs to create the “Foodication” app. Just load up 
                     the page and decide to eat in or eat out.</p>
                 </Card.Text>
@@ -117,8 +116,8 @@ function Projects() {
                 </Card.Title>
                 <Card.Text>
                   <p>This is a user friendly dashboard that runs using a third-party API to retrieve weather
-                  forecast data (current and five day). The dashboard runs with dynamically updated HTML and 
-                  CSS that uses `localStorage` to display any resent searched cities for easy research.</p>
+                  forecast data (current and five day). The dashboard runs with dynamically updated HTML5 and 
+                  CSS3 that uses localStorage to display any resent searched cities for easy research.</p>
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
@@ -134,7 +133,7 @@ function Projects() {
                 </Card.Title>
                 <Card.Img variant="top" src="links/password.PNG" alt="Password Generator Screenshot" rounded fluid /> 
                 <Card.Text>
-                  <p>This password generator uses html, css, and javascript to produce a completely random 
+                  <p>This password generator uses HTML5, CSS3, and Java Script to produce a completely random 
                     password with preselected user criteria. The user is first prompted to set their parameters 
                     such as length, lowercase, uppercase, numeric, etc. After all the questions are answered 
                     the user is then presented with a password they can copy and save.</p>
@@ -155,7 +154,7 @@ function Projects() {
         <Col></Col>
         <Col md={4}>
           <Card>
-            <h1><strong>🙥 React Projects 🙧</strong></h1>
+            <h1><strong> React Projects </strong></h1>
           </Card>
         </Col>
         <Col></Col>
@@ -193,8 +192,7 @@ function Projects() {
                   <h3><strong>Beyond Notes</strong></h3>
                 </Card.Title>
                 <Card.Text>
-                  <p>Beyond Notes is not just a regular note tacker it is a day planner, calendar, contact list, 
-                  image Uploader, Good Quote giver, Event List Maker and all-around organizational tool. All the 
+                  <p>Beyond Notes is a multi-tasking application consisting oa a day planner, calendar, events maker and all-around user-friendly organizational tool. All the 
                   user information is stored in a Mongo Database under the users registered profile. Beyond Notes was 
                   designed by Cheryl Daniels, Ashley Feese, Malesha Jones, and I (Travis Lovingood) using Cloudinary, 
                   Random Api, Restful Api, Marterialize, Moment, Node-sass, React-big-calendar, React-images-upload, 
@@ -215,7 +213,7 @@ function Projects() {
         <Col></Col>
         <Col md={4}>
           <Card>
-            <h3><li><Link to="/">🙤 Back Home 🙦</Link></li></h3>
+            <h3><li><Link to="/"> Back Home </Link></li></h3>
           </Card>    
         </Col>
         <Col></Col>

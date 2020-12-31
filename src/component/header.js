@@ -14,14 +14,14 @@ function header() {
         <Col xs={8}>
           <Row>
             <Col xs={12}>
-              <h1><strong>🙥 Travis Lovingood 🙧</strong></h1>
+              <h1><strong> Travis Lovingood </strong></h1>
             </Col>
           </Row>
           <Nav />      
           <Row>
             <Col></Col>
             <Col xs={12}>
-              <h3><strong>🙤 Front End Web Developer 🙦</strong></h3>
+              <h3><strong> Front-End Web Developer </strong></h3>
             </Col>
             <Col></Col>
           </Row>

@@ -20,7 +20,7 @@ function About() {
               <Row>
                 <Col md={8}>
                   <Card.Text>
-                    <h1><strong>🙥 About Me 🙧</strong></h1>
+                    <h1><strong> About Me </strong></h1>
                   </Card.Text>
                   <hr />
                   <Card.Text><p>
@@ -32,7 +32,7 @@ function About() {
                     </p>
                   </Card.Text>
                   <Card.Text>
-                    <h5>🙥 Skills 🙧</h5>
+                    <h5> Skills </h5>
                   </Card.Text>
                   <Card.Text>
                     <p>I have experience with HTML5, CSS3, Bootstrap, JavaScript, JQuery, Express.js, Node.js, 
@@ -56,7 +56,7 @@ function About() {
         <Col></Col>
         <Col md={4}>
           <Card>
-            <h3><li><Link to="/">🙤 Back Home 🙦</Link></li></h3>
+            <h3><li><Link to="/"> Back Home </Link></li></h3>
           </Card>    
         </Col>
         <Col></Col>
